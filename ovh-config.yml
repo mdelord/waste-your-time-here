@@ -1,0 +1,24 @@
+name: pony
+description: Pony
+constraints:
+    - name: instances
+      values:
+      - falvor: b2-7
+        minimum: 3
+
+install:
+    - echo pony > pony
+    - cat pony
+    - echo pony >> pony
+    - mv pony ponies
+    - cat ponies
+
+commands:
+    - name: init
+      command: cat ponies
+
+    - name: deploy
+      command: echo pony >> ponies
+
+    - name: helper
+      command: echo PONIES EVERYWHERE
