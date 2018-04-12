@@ -12,6 +12,7 @@ install:
     - echo pony >> pony
     - mv pony ponies
     - cat ponies
+    - echo "a wild pony appears"
 
 commands:
     - name: init
