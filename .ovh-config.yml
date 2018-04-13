@@ -3,7 +3,7 @@ description: Pony
 constraints:
     - name: instances
       values:
-      - falvor: b2-7
+      - flavor: b2-7
         minimum: 3
 
 install:
