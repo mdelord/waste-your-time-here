@@ -1,5 +1,16 @@
 name: pony
 description: Pony
+
+inputs:
+    - key: OS_REGION_NAME
+      description: The region where the stack will be installed
+      type: openstackRegion
+      required: true
+    - key: OS_KEYPAIR_NAME
+      description: The keypair name used to spawn the instances
+      type: openstackKeypairName
+      required: false
+
 constraints:
     - name: instances
       values:
